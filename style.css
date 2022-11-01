@@ -5,6 +5,7 @@
 }
 
 button {
+    margin-top: 15px;
     background-color: #ffd782;
     border-radius: 10px;
     padding: 15px 30px;
@@ -16,8 +17,12 @@ button:hover {
     box-shadow: 6px 6px;
 }
 
+button:active {
+    background-color: #603601;
+    color: #ffd782;
+}
+
 /*
-font-family: 'Kolker Brush', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Sacramento', cursive;
 */
@@ -119,7 +124,11 @@ section p {
     font-size: 1.2rem;
 }
 
-.section1-img {
+.hidden {
+    display: none;
+}
+
+.section1-img, .section2-img, .footer-img {
     background-image: url(img/pexels-brigitte-tohm-377903.jpg);
     background-position: center;
     background-size: cover;
@@ -127,7 +136,12 @@ section p {
     height: 100vh;
 }
 
+.section2-img {
+    background-image: url(img/pexels-furkanfdemir-6215303.jpg);
+}
+
 .section1-content {
+    padding-top: 105px;;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -139,4 +153,66 @@ main {
     scroll-snap-type: y mandatory;
     height: 100vh;
     overflow-y: scroll;
+}
+
+.theBestCoffeeShop {
+    background-color: #ffd782;
+    color:#603601;
+    padding-top: 104px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.theBestCoffeeShop p {
+    padding: 90px 120px 90px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    padding: 0 60px;
+}
+
+.item img {
+    width: 80px;
+}
+
+footer {
+    display:grid;
+    grid-template-columns: 45% 55%;
+    min-height: 100vh;
+    text-align: center;
+    height: 100vh;
+    background-color: black;
+    scroll-snap-align: center;
+
+}
+
+.footer-img {
+    background-image: url(img/pexels-eyad-tariq-3879495.jpg);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+}
+
+input, textarea {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #ffd782;
+    color: #1C0A00;
 }

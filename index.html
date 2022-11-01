@@ -15,18 +15,17 @@
   <body>
     <nav>
         <div class="navigation">
-            <a href="#logo"><img id="logo" src="img/breakfast.png" alt="logo Bitter Sweet"></a>
+            <a href="#header"><img id="logo" src="img/breakfast.png" alt="logo Bitter Sweet"></a>
             <ul>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Places</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <img src="img/Artboard 1 copy.png" alt="drip">
     </nav> 
     <main>
-        <header>
-            <!--<img src="img/pexels-polina-tankilevitch-4109749.jpg" alt="coffee beans">-->
+        <header id="header">
             <h1>Bitter Sweet</h1>
         </header>
         <section>
@@ -34,9 +33,48 @@
             <div class="section1-content">
                 <h2>Fresh beans</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio, maiores laudantium saepe unde, voluptatum debitis sit iure eveniet nisi odio dolorem, sed obcaecati minus possimus numquam officiis vitae. Labore!</p>
-                <button role="button">Learn more</button>
+                <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam obcaecati molestias deleniti assumenda dolore fugit hic consequuntur animi consequatur natus illo praesentium, perspiciatis illum reiciendis numquam quidem sed nemo soluta!</p>
+                <button role="button" onclick="myFunction(this)"><span>Show more</span></button>
             </div>
         </section>
+        <section class="theBestCoffeeShop">
+            <h2>The Best Coffee Shop</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam tenetur ad odit alias assumenda quod, a eos deserunt libero molestias beatae quisquam officiis, praesentium, iusto quidem aperiam laboriosam expedita nihil.</p>
+            <div class="container">
+                <div class="item">
+                    <img src="img/icons8-coffee-beans-100.png">
+                    <h3>The best beans</h3>
+                </div>
+                <div class="item">
+                    <img src="img/icons8-milk-carton-100.png">
+                    <h3>Quality milk</h3>
+                </div>
+                <div class="item">
+                    <img src="img/icons8-croissant-100.png">
+                    <h3>Fresh bakery</h3>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section1-content">
+                <h2>Delicious desserts</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio, maiores laudantium saepe unde, voluptatum debitis sit iure eveniet nisi odio dolorem, sed obcaecati minus possimus numquam officiis vitae. Labore!</p>
+            </div>
+            <div class="section2-img"></div>
+        </section>
+        <footer>
+            <div class="footer-img"></div>
+            <div id="contact">
+                <form action="form.php" method="post">
+                    <input type="text" name="name" placeholder="Type your name" required>
+                    <input type="text" name="email" placeholder="example@gmail.com" required>
+                    <input type="text" name="title" placeholder="Title" required>
+                    <textarea rows="8" name="message" placeholder="Message goes here..." required></textarea>
+                    <button type="submit" class="više-btn">Send</button>
+                </form>
+            </div>
+        </footer>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
