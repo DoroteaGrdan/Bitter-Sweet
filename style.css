@@ -84,7 +84,6 @@ header {
     background-image: url(img/pexels-polina-tankilevitch-4109749.jpg);
     display: flex;
     justify-content: center;
-    height: calc(100vh - 45px);
     background-size: cover;
     align-items: center;
     scroll-snap-align: center;
@@ -133,7 +132,6 @@ section p {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 .section2-img {
@@ -186,12 +184,11 @@ main {
 }
 
 footer {
-    display:grid;
+    display: grid;
     grid-template-columns: 45% 55%;
     min-height: 100vh;
     text-align: center;
-    height: 100vh;
-    background-color: black;
+    background-color: #010101;
     scroll-snap-align: center;
 
 }
@@ -206,7 +203,14 @@ form {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-top: 50%;
+    width: 100%;
+
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input, textarea {
@@ -215,4 +219,58 @@ input, textarea {
     margin-bottom: 20px;
     background-color: #ffd782;
     color: #1C0A00;
+}
+
+/*   ABOUT US   */
+
+.AboutUs {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    background-color: #ffd782;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.flexParentForCentering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.AboutUs img {
+    width: 80%;
+}
+
+.AboutUs h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.AboutUs li {
+    padding-bottom: 1rem;
+}
+
+/*   PLACES   */
+
+.locations {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    background-color: #ffd782;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.mapouter {
+    width: 100%;
 }

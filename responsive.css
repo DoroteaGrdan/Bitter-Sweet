@@ -1,0 +1,137 @@
+@media screen and (max-width: 1100px) {
+    .navigation {
+        flex-direction: column;
+    }
+    
+    #logo {
+        width: 150px;
+        margin-left: 0;
+    }
+
+    .navigation ul {
+        padding-right: 0;
+        padding-top: 3rem;
+    }
+
+    .navigation a {
+        font-size: 4rem;
+    }
+
+    header, .bgImg1, .bgImg2, footer{
+        min-height: 50vh;
+    }
+
+    .bgImg1, .bgImg2, footer {
+        background-image: url(img/pexels-brigitte-tohm-377903.jpg);
+        box-shadow: inset 0 0 0 2000px rgba(58, 58, 58, 0.63);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-template-columns: 100%;
+    }
+
+    .bgImg2 {
+        background-image: url(img/pexels-furkanfdemir-6215303.jpg);
+    }
+
+    footer {
+        background-image: url(img/pexels-eyad-tariq-3879495.jpg);
+    }
+
+    .section1-img, .section2-img, .footer-img {
+        background-image: none;
+        height: 0;
+    }
+
+    .section1-content, .section2-content, .contact {
+        padding: 25% 100px;
+        color: #ffd782;
+    }
+    
+    .section1-content p, .section2-content p {
+        color: white;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .theBestCoffeeShop {
+        padding-top: 250px;
+    }
+
+    h1 {
+        font-size: 7rem;
+        padding-top: 200px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .item {
+        height: 280px;
+    }
+
+    .theBestCoffeeShop p {
+        font-size: 1.5rem;
+    }
+
+    .item h3 {
+        font-size: 5rem;
+        padding-top: 1.5rem;
+    }
+
+    .contact {
+        padding-bottom: 10%;
+    }
+
+    /* ABOUT US */
+
+    .AboutUs {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh;
+        padding: 0 10%;
+    }
+
+    .AboutUs img{
+        display: none;
+    }
+
+    .AboutUs h2 {
+        font-size: 5rem;
+    }
+
+    .AboutUs p, .locations p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .AboutUs h3 {
+        font-size: 4rem;
+        padding-top: 100px;
+    }
+
+    .AboutUs li {
+        font-size: 1.5rem;
+    }
+
+    /* PLACES */
+
+    .locations {
+        display: flex;
+        flex-direction: column;
+        padding: 250px 100px 100px;
+    }
+
+    .locations .flexParentForCentering:first-child {
+        padding-top: 100px;
+    }
+
+    .locations iframe {
+        height: 200px;
+        width: 85%;
+    }
+
+}
