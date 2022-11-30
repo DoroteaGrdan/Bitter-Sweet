@@ -13,9 +13,6 @@
         padding-top: 3rem;
     }
 
-    .navigation a {
-        font-size: 4rem;
-    }
 
     header, .bgImg1, .bgImg2, footer{
         min-height: 50vh;
@@ -50,7 +47,6 @@
     
     .section1-content p, .section2-content p {
         color: white;
-        font-size: 1.5rem;
         line-height: 2.5rem;
     }
 
@@ -59,7 +55,7 @@
     }
 
     h1 {
-        font-size: 7rem;
+        font-size: 6rem;
         padding-top: 200px;
     }
 
@@ -73,10 +69,10 @@
 
     .theBestCoffeeShop p {
         font-size: 1.5rem;
+        line-height: 2.5rem;
     }
 
     .item h3 {
-        font-size: 5rem;
         padding-top: 1.5rem;
     }
 
